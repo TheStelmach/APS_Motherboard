@@ -1,0 +1,17 @@
+2023/12/27
+
+-Use SOIC packages for the two motor drivers for convenient handsoldering. The packages currently used are too small.
+-DRV5011 has internal deglitching, no need for the capacitors.
+-The encoders are open-drain output and the MCU's internal pull-up resistors might be too large for higher speeds, add pull-up resistors to encoder outputs.
+-SN65HVD72DRBR - wrong package & footprint combination. Make an adjustment and use a SOIC package for everything.
+-Hall effect latches are used, which means the HIGH signal holds until the sensor senses an opposite direction magnetic flux source. Find a switch instead (Texas Instruments has those)
+-Prior to ordering the second iteration of PCB, configure all the pins on STM32CubeIDE first and confirm that there are no warnings.
+-UART testpads should be made slightly bigger and located closer to the internal side of the PCB, if possible.
+-Motor connection pads should be standardized for convenience during setup.
+
+2023/12/29
+
+-The BDC driver circuitry works well but the inrush current of the BDC motor is too high. The internal protection circuitry doesn't like it and switches off the power supply. Therefore, an inrush current limiter MUST be added to the board.
+-The internal heating simulation LED needs a 10k resitor added, it was not added at first because a 100 Ohm resistor was planned to be placed instead.
+-It is worth mentioning that the PCB with all external peripherals disconnected and the MCU running at 16Mhz and performing constant computations consumes under 25mA at 12V, which is a decent power consumption efficiency for a commercial product already, considering the on-board power conversion circuitry. The actual program will keep the MCU running either in low power mode driven by the RTC or at 2MHz at all times.
+

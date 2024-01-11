@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DRV8411A")(type "KiCad")(uri "/home/gilbert/Downloads/Kicad/KiCADv6/2023-11-10_05-38-48.kicad_sym")(options "")(descr "BLDC/Stepper Driver"))
+  (lib (name "DRV5011")(type "KiCad")(uri "/home/gilbert/Downloads/Kicad/DRV5011/KiCADv6/2023-11-19_22-33-40.kicad_sym")(options "")(descr ""))
+  (lib (name "Project_Library")(type "KiCad")(uri "C:/Users/moroz/Documents/KiCad/Projects/BDC_ctrl_w_hall_effect_latches/Project_Library.kicad_sym")(options "")(descr ""))
+)
