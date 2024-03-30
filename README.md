@@ -14,3 +14,6 @@ Board assembledand debugged
 Board communicated with by the custom RS-485 transceiver board, link below.
 
 https://github.com/TheStelmach/UART_to_RS-485_V1/tree/main
+
+![alt text](https://github.com/TheStelmach/APS_Motherboard/blob/main/Screenshot.png)
+Schematics overview
