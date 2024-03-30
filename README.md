@@ -8,7 +8,7 @@ Render 1
 Render 2
 
 ![alt text](https://github.com/TheStelmach/APS_Motherboard/blob/main/image_3.jpg)
-Board assembledand debugged
+Board partially assembled and debugged
 
 ![alt text](https://github.com/TheStelmach/APS_Motherboard/blob/main/image_4.jpg)
 Board communicated with by the custom RS-485 transceiver board, link below.
