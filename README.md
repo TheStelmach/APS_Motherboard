@@ -1,5 +1,4 @@
 # PeekAntenna
-ENGR 490 Project
 
 ![alt text](https://github.com/TheStelmach/APS_Motherboard/blob/main/image_1.png)
 Render 1
